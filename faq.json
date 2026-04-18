@@ -1,0 +1,18 @@
+[
+  {
+    "pergunta": "Quem deve se alistar?",
+    "resposta": "Todo cidadão brasileiro do sexo masculino no ano em que completa 18 anos deve se alistar."
+  },
+  {
+    "pergunta": "Qual o prazo para alistamento?",
+    "resposta": "O alistamento deve ser feito entre janeiro e junho do ano em que completa 18 anos."
+  },
+  {
+    "pergunta": "O que acontece se eu não me alistar?",
+    "resposta": "Você pode sofrer restrições como não tirar passaporte ou assumir cargos públicos."
+  },
+  {
+    "pergunta": "Posso me alistar depois do prazo?",
+    "resposta": "Sim, mas pode haver multa e necessidade de regularização."
+  }
+]
