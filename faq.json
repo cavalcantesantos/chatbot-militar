@@ -1,18 +1,47 @@
 [
   {
     "pergunta": "Quem deve se alistar?",
-    "resposta": "Todo cidadão brasileiro do sexo masculino no ano em que completa 18 anos deve se alistar."
+    "aliases": ["quem deve fazer o alistamento", "homem precisa se alistar", "mulher precisa se alistar", "alistamento feminino e obrigatorio"],
+    "resposta": "O Serviço Militar Inicial Obrigatório (SMIO) é obrigatório para brasileiros do sexo masculino no ano em que completam 18 anos. Para mulheres, existe o Serviço Militar Inicial Feminino (SMIF), de caráter voluntário, sujeito aos municípios e às Organizações Militares contemplados no Plano Geral de Convocação. Confira as condições oficiais antes de realizar o procedimento.",
+    "fonte": {
+      "title": "Ministério da Defesa — Serviço Militar",
+      "url": "https://www.gov.br/defesa/pt-br/assuntos/servico-militar"
+    }
   },
   {
     "pergunta": "Qual o prazo para alistamento?",
-    "resposta": "O alistamento deve ser feito entre janeiro e junho do ano em que completa 18 anos."
+    "aliases": ["quando devo me alistar", "ate quando posso me alistar", "qual a data do alistamento"],
+    "resposta": "O período regular de alistamento ocorre de 1º de janeiro a 30 de junho do ano em que o brasileiro completa 18 anos. Para o alistamento feminino voluntário, também é necessário verificar se o município está contemplado no processo daquele ano.",
+    "fonte": {
+      "title": "Ministério da Defesa — Serviço Militar",
+      "url": "https://www.gov.br/defesa/pt-br/assuntos/servico-militar"
+    }
   },
   {
-    "pergunta": "O que acontece se eu não me alistar?",
-    "resposta": "Você pode sofrer restrições como não tirar passaporte ou assumir cargos públicos."
+    "pergunta": "Onde posso fazer o alistamento?",
+    "aliases": ["como faço o alistamento", "site para se alistar", "onde fica a junta de serviço militar"],
+    "resposta": "O alistamento pode ser realizado pelo portal oficial https://alistamento.eb.mil.br/ ou presencialmente em uma Junta de Serviço Militar (JSM). Para o Serviço Militar Inicial Feminino, consulte também as condições e os municípios participantes divulgados pelo Ministério da Defesa.",
+    "fonte": {
+      "title": "Portal oficial do Alistamento Militar",
+      "url": "https://alistamento.eb.mil.br/"
+    }
   },
   {
-    "pergunta": "Posso me alistar depois do prazo?",
-    "resposta": "Sim, mas pode haver multa e necessidade de regularização."
+    "pergunta": "O que acontece se eu não me alistar no prazo?",
+    "aliases": ["perdi o prazo do alistamento", "alistamento atrasado", "posso me alistar depois dos 18"],
+    "resposta": "As providências dependem da situação e das regras aplicáveis ao Serviço Militar Inicial Obrigatório ou ao Serviço Militar Inicial Feminino. Procure a Junta de Serviço Militar mais próxima para verificar a regularização, eventuais multas e documentos necessários. Não considere esta resposta substituta da orientação oficial da JSM.",
+    "fonte": {
+      "title": "Ministério da Defesa — Serviço Militar Obrigatório",
+      "url": "https://www.gov.br/defesa/pt-br/carta-de-servico/servico-militar-obrigatorio-smo"
+    }
+  },
+  {
+    "pergunta": "Quais são as consequências de estar em débito com o Serviço Militar?",
+    "aliases": ["o que acontece se nao estiver em dia", "restricoes por nao se alistar", "nao tenho certificado militar"],
+    "resposta": "A situação militar irregular pode gerar impedimentos previstos na legislação, inclusive para obter passaporte, prestar concurso público, assumir cargo público e realizar determinados atos perante instituições oficiais. As consequências dependem da situação individual. Procure uma Junta de Serviço Militar para regularizar seu caso.",
+    "fonte": {
+      "title": "Ministério da Defesa — Serviço Militar Obrigatório",
+      "url": "https://www.gov.br/defesa/pt-br/carta-de-servico/servico-militar-obrigatorio-smo"
+    }
   }
 ]
