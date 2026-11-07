@@ -1,0 +1,58 @@
+:root {
+  color-scheme: light;
+  --navy: #102f50;
+  --navy-2: #183f66;
+  --blue: #28659a;
+  --ink: #203247;
+  --muted: #68798a;
+  --line: #dce5ed;
+  --paper: #ffffff;
+  --bg: #f2f6f9;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+.shell { width: min(920px, calc(100% - 32px)); margin: 38px auto; }
+.topbar { display: flex; align-items: center; gap: 16px; padding: 22px 26px; color: white; background: var(--navy); border-radius: 18px 18px 0 0; box-shadow: 0 12px 30px #102f501c; }
+.brand-mark, .avatar { display: grid; place-items: center; flex: 0 0 auto; width: 48px; height: 48px; border-radius: 14px; background: #ffffff1a; color: white; font-weight: 800; letter-spacing: .04em; }
+.eyebrow { margin: 0 0 5px; font-size: .68rem; font-weight: 800; letter-spacing: .14em; opacity: .76; }
+h1 { margin: 0; font-size: clamp(1.2rem, 3vw, 1.65rem); }
+.subtitle { margin: 4px 0 0; color: #d4e1ed; font-size: .9rem; }
+.status { margin-left: auto; white-space: nowrap; color: #d9f5e4; font-size: .78rem; }
+.status i { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: #64d69a; }
+.intro { padding: 30px 34px 26px; background: linear-gradient(120deg, #e5eef5, #f7fafc); border: 1px solid var(--line); border-top: 0; }
+.intro .eyebrow { color: var(--blue); }
+.intro h2 { max-width: 650px; margin: 8px 0; color: var(--navy); font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.2; }
+.intro p:last-child { max-width: 700px; margin: 10px 0 0; color: #536679; line-height: 1.6; }
+.chat-panel { padding: 22px; background: var(--paper); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 18px 18px; box-shadow: 0 16px 36px #102f500c; }
+.messages { display: flex; flex-direction: column; gap: 16px; min-height: 230px; max-height: 470px; overflow-y: auto; padding: 4px 2px 18px; }
+.message { display: flex; align-items: flex-start; gap: 10px; max-width: 88%; }
+.message.user { align-self: flex-end; flex-direction: row-reverse; }
+.avatar { width: 34px; height: 34px; border-radius: 11px; background: var(--navy); font-size: .72rem; }
+.bubble { padding: 13px 16px; border: 1px solid var(--line); border-radius: 4px 15px 15px 15px; background: #f7fafc; line-height: 1.55; overflow-wrap: anywhere; }
+.user .bubble { color: white; background: var(--navy-2); border-color: var(--navy-2); border-radius: 15px 4px 15px 15px; }
+.bubble p { margin: 5px 0 0; white-space: pre-wrap; }
+.sources { margin-top: 10px; padding-top: 9px; border-top: 1px solid #dce5ed; font-size: .82rem; }
+.sources a { display: block; margin-top: 5px; color: #175f96; }
+.user .sources { border-color: #ffffff55; }
+.suggestions { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 16px 44px; }
+.suggestions button { padding: 8px 12px; border: 1px solid #cbd9e5; border-radius: 999px; background: white; color: #315b7d; cursor: pointer; font-size: .82rem; }
+.suggestions button:hover { background: #edf4f9; }
+.composer { display: flex; align-items: flex-end; gap: 10px; padding: 10px; border: 1px solid #cbd8e3; border-radius: 14px; background: white; }
+textarea { width: 100%; max-height: 130px; resize: vertical; border: 0; outline: 0; padding: 9px; color: var(--ink); font: inherit; }
+.composer button { flex: 0 0 auto; padding: 11px 16px; border: 0; border-radius: 10px; background: var(--navy); color: white; font-weight: 700; cursor: pointer; }
+.composer button:disabled { opacity: .55; cursor: wait; }
+.disclaimer { margin: 12px 2px 0; color: var(--muted); font-size: .75rem; line-height: 1.5; }
+footer { display: flex; justify-content: space-between; gap: 12px; padding: 18px 4px; color: var(--muted); font-size: .78rem; }
+footer a { color: #245e8c; text-decoration: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 600px) {
+  .shell { width: min(100% - 18px, 920px); margin: 9px auto; }
+  .topbar { padding: 17px; gap: 11px; }
+  .brand-mark { width: 42px; height: 42px; }
+  .status { font-size: .7rem; }
+  .intro { padding: 23px 20px; }
+  .chat-panel { padding: 14px; }
+  .message { max-width: 100%; }
+  .suggestions { margin-left: 0; }
+  footer { flex-direction: column; }
+}
