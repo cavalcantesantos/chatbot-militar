@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f50">
+  <meta name="description" content="Assistente virtual educativo sobre o Serviço Militar no Brasil.">
+  <title>Recruta Cidadão | Assistente Virtual</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">RC</div>
+      <div>
+        <p class="eyebrow">ASSISTENTE VIRTUAL</p>
+        <h1>Recruta Cidadão</h1>
+        <p class="subtitle">Orientação sobre o Serviço Militar no Brasil</p>
+      </div>
+      <span class="status"><i></i> Online</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">SEJA BEM-VINDO</p>
+      <h2>Informação clara para cada etapa da sua jornada.</h2>
+      <p>Faça uma pergunta sobre alistamento, seleção, regularização ou Serviço Militar. As respostas são educativas e indicam fontes para você confirmar as informações.</p>
+    </section>
+
+    <section class="chat-panel" aria-label="Conversa com o assistente">
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message assistant">
+          <div class="avatar">RC</div>
+          <div class="bubble">
+            <strong>Olá! Eu sou o Recruta Cidadão.</strong>
+            <p>Como posso ajudar você hoje? Escolha um assunto ou escreva sua dúvida.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="suggestions" aria-label="Perguntas sugeridas">
+        <button type="button" data-question="Quem deve se alistar?">Quem deve se alistar?</button>
+        <button type="button" data-question="Qual o prazo para alistamento?">Prazos</button>
+        <button type="button" data-question="Onde posso fazer o alistamento?">Onde me alistar?</button>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="question">Digite sua pergunta</label>
+        <textarea id="question" rows="1" maxlength="2000" placeholder="Digite sua pergunta..." required></textarea>
+        <button id="send" type="submit" aria-label="Enviar pergunta">Enviar <span aria-hidden="true">➤</span></button>
+      </form>
+      <p class="disclaimer">Não informe CPF, senhas ou dados pessoais. Este assistente é educativo e não substitui a orientação oficial da Junta de Serviço Militar.</p>
+    </section>
+
+    <footer>
+      <span>Recruta Cidadão</span>
+      <a href="https://alistamento.eb.mil.br/" target="_blank" rel="noopener noreferrer">Portal oficial do Alistamento Militar ↗</a>
+    </footer>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
